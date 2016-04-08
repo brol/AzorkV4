@@ -1,0 +1,52 @@
+{{tpl:extends parent="__layout.html"}}
+
+<tpl:Block name="head-title">
+  <title>{{tpl:lang Categories Page}} - {{tpl:BlogName encode_html="1"}}</title>
+</tpl:Block>
+
+<tpl:Block name="meta-robots">
+  <meta name="ROBOTS" content="{{tpl:BlogMetaRobots}}" />
+</tpl:Block>
+
+<tpl:Block name="dc-entry">
+  <meta name="dc.title" lang="{{tpl:BlogLanguage}}" content="{{tpl:EntryTitle encode_html="1"}} - {{tpl:BlogName encode_html="1"}}" />
+  <meta property="dc.language" content="{{tpl:BlogLanguage}}" />
+</tpl:Block>
+
+<tpl:Block name="head-linkrel">
+  <link rel="top" href="{{tpl:BlogURL}}" title="{{tpl:lang Home}}" />
+  <link rel="contents" href="{{tpl:BlogArchiveURL}}" title="{{tpl:lang Archives}}" />
+  <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{tpl:BlogFeedURL type="atom"}}" />
+</tpl:Block>
+
+<tpl:Block name="body-tag"><body class="dc-page"></tpl:Block>
+
+<tpl:Block name="main-content">
+  <p id="navlinks">
+  <tpl:EntryPrevious><a href="{{tpl:EntryURL}}"
+  title="{{tpl:EntryTitle encode_html="1"}}" class="prev">&#171; {{tpl:EntryTitle encode_html="1"
+  cut_string="50"}}</a></tpl:EntryPrevious>
+  <tpl:EntryNext> <span>-</span> <a href="{{tpl:EntryURL}}"
+  title="{{tpl:EntryTitle encode_html="1"}}" class="next">{{tpl:EntryTitle encode_html="1"
+  cut_string="50"}} &#187;</a></tpl:EntryNext>
+  </p>
+
+  <div id="p{{tpl:EntryID}}" class="post" role="article">
+
+    <p class="post-info"><span class="day">{{tpl:EntryDate format="%d"}}</span><span class="month">{{tpl:EntryDate format="%b"}}</span><span class="year">{{tpl:EntryDate format="%Y"}}</span></p>
+    <h2 class="post-title">{{tpl:EntryTitle encode_html="1"}}</h2>
+
+    <!-- # --BEHAVIOR-- publicEntryBeforeContent -->
+    {{tpl:SysBehavior behavior="publicEntryBeforeContent"}}
+
+    <tpl:EntryIf extended="1">
+      <div class="post-excerpt">{{tpl:EntryExcerpt}}</div>
+    </tpl:EntryIf>
+    <div class="post-content">{{tpl:EntryContent}}</div>
+
+    <!-- # --BEHAVIOR-- publicEntryAfterContent -->
+    {{tpl:SysBehavior behavior="publicEntryAfterContent"}}
+  </div>
+
+  <div class="author">{{tpl:lang By}} {{tpl:EntryAuthorLink}} | {{tpl:lang on}} {{tpl:EntryDate}} {{tpl:EntryTime}}</div>
+</tpl:Block>

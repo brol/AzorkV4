@@ -1,0 +1,46 @@
+Version 1.0 - 08/04/2016 - Pierre Van Glabeke :
+* html5
+* héritage de thème, mustek
+* modifs css
+
+Version 0.9 - 07/03/2015 - Pierre Van Glabeke :
+* modif html
+
+Version 0.8 - 15/02/2015 - Pierre Van Glabeke :
+* mise à jour css et html5
+* ajout localisation
+
+Version 0.7.2 par Pierre Van Glabeke :
+* mise à jour css et html
+* ajout changelog
+
+Version 0.7.1 par Pierre Van Glabeke :
+* mise en conformité des balises avec dotclear 2.2
+* ajout style pour l'effet current des catégories en sidebar et diverses modifs de styles
+* ajout des sous-catégories dans le tpl category.html
+* ajout de page.html et external.html
+* suppression de tpl inutiles (identiques à ceux du thème par défaut)
+
+MAJ du 5 Janvier 2008
+* Modification des polices d'affichage pour un meilleur confort visuel
+* Modification des couleurs (couleurs plus prononcées)
+* Meilleur compatibilité avec IE7 et FireFox
+
+Maj du 08/01/08
+* Correction d'affichage de la balise PRE
+* Modification d'affichage de la page des tags
+
+MAJ du 11 Janvier 2008
+* Correction mineure de l'affichage des commentaires
+* Correction mineure de l'affichage des trackbacks
+* Correction de quelques polices d'affichage + couleur
+* Correction mineure de la feuille de style Amélioration compatibilité
+
+IE6/IE7/FF
+
+MAJ du 19 Janvier 2008
+* Modification d'affichage des archives
+* Ajout de l'auteur du billet dans la page "post"
+
+Version 0.6
+* Mise à jour du thème vers dotclear 2.1.1
