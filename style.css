@@ -88,11 +88,19 @@ hr { }
 	4. HAUT DE PAGE
 ------------------------------------------------------------- */
 
-#top { 
-	background: transparent url("img/top_title.gif") no-repeat top left;
+#top {
 	font-size: 110%;
 	letter-spacing: 1px;
-	}
+  border:1px solid #9fc2e1;
+  background: #c7e4fe;
+  background: -moz-linear-gradient(top,  #c7e4fe 0%, #aecce8 50%, #9dc1e2 51%, #abcae7 100%);
+  background: -webkit-linear-gradient(top,  #c7e4fe 0%,#aecce8 50%,#9dc1e2 51%,#abcae7 100%);
+  background: linear-gradient(to bottom,  #c7e4fe 0%,#aecce8 50%,#9dc1e2 51%,#abcae7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7e4fe', endColorstr='#abcae7',GradientType=0 );
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
 #top h1 { }
 #top h1 a {
 	display: block;
@@ -427,4 +435,4 @@ feed.png a piocher dans le theme par defaut par ex.) */
 .post, .post-content, .footnotes, .attachments, 
 .post-info-co, #comments, #footer, .read-it {
     clear: both;
-    }
+}
