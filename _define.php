@@ -14,10 +14,10 @@ $this->registerModule(
 	/* Name */			    "AzorkV4",
 	/* Description*/		"Adaptation du kit Aorakit 2C de Kozlika",
 	/* Author */			  "Azork, Pierre Van Glabeke",
-	/* Version */			  '1.2',
+	/* Version */			  '1.3',
 	array(
 		'type'		=>		'theme',
 		'tplset' => 'mustek',
-		'dc_min' => '2.9'
+		'dc_min' => '2.15'
 	)
 );
